@@ -34,6 +34,20 @@ def my_count(nl):
     return c
 
 
+def words(splitted_list):
+    i = 0
+    my_list = list()
+    while i < len(splitted_list):
+        c = splitted_list.count(splitted_list[i])
+        if c == 1:
+            my_list.append(splitted_list[i])
+        i += 1
+    if not my_list:
+        print("Такі слова не знайдені.")
+    else:
+        print(my_list)
+
+
 def main():
     n = data("Введіть кількість елементів у списку: ")
     my_list = list()
@@ -101,17 +115,7 @@ def main():
     splitted_list = splitted_sent1 + splitted_sent2
 
     print("Слова, що зустрічаються один раз в обох реченнях: ")
-    i = 0
-    my_list = list()
-    while i < len(splitted_list):
-        c = splitted_list.count(splitted_list[i])
-        if c == 1:
-            my_list.append(splitted_list[i])
-        i += 1
-    if not my_list:
-        print("Такі слова не знайдені.")
-    else:
-        print(my_list)
+    words(splitted_list)
 
 
 if __name__ == "__main__":
