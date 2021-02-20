@@ -39,8 +39,8 @@ def words(splitted_list):
     my_list = list()
     while i < len(splitted_list):
         c = splitted_list.count(splitted_list[i])
-        if c == 1:
-            my_list.append(splitted_list[i])
+        if c == 2:
+            if not splitted_list[i] in my_list: my_list.append(splitted_list[i])
         i += 1
     if not my_list:
         print("Такі слова не знайдені.")
