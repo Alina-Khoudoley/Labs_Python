@@ -1,7 +1,6 @@
 import datetime
 import random
 import time
-import functools
 
 Registered = []
 
@@ -60,31 +59,6 @@ def decorator_reg(func):
         Registered.append(func.__name__)
         return function
     return wrapper
-
-
-# def decorator_maker():
-#     registered = ""
-#     def my_decorator(func):
-#         """
-#         Декоратор для декількох запусків функції у разі її неуспішного виконання
-#
-#         :param func: Функція, яку обгортує декоратор
-#         :return: Повертає функцію-"обгортку"
-#         """
-#
-#         def wrapper():
-#             """
-#             Функція-"обгортка"
-#
-#             """
-#             s = func()
-#             while not s:
-#                 s = func()
-#             print("Function executed correctly")
-#
-#         return wrapper
-#     #registered +=
-#     return my_decorator
 
 
 @decorator_reg
