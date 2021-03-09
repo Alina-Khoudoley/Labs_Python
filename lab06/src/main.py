@@ -70,7 +70,7 @@ def max_elem(nums, n):
     max_s = ""
     for i in range(1, n+1):
         max_s += str(sl[-i]) + ', '
-    print(f'{n} first min elements are: {max_s}')
+    print(f'{n} first max elements are: {max_s}')
 
 
 def average(nums):
