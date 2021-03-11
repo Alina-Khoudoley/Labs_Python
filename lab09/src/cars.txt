@@ -1,0 +1,3 @@
+Brand: Audi, model: Q7, transmission: automatic, price: 100800, year: 2021, engine volume: 3.0, number of horsepower: 286
+Brand: BMW, model: X6, transmission: automatic, price: 158400, year: 2020, engine volume: 4.4, number of horsepower: 530
+Brand: Mazda, model: CX-5, transmission: manual, price: 14000, year: 2013, engine volume: 2.0, number of horsepower: 150
