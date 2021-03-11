@@ -9,15 +9,13 @@ def first_line(s1, s2):
 
 
 def second_line():
-    file = codecs.open('text.txt', encoding='utf-8', mode='r')
     i = 0
     try:
-        file.readline()
-        s = file.readline()
+        file = codecs.open('text.txt', encoding='utf-8', mode='r')
     except ValueError:
         print("Error")
-    finally:
-        file.close()
+    file.readline()
+    s = file.readline()
     return s[0]
 
 
@@ -33,7 +31,6 @@ def number_symbols():
     with codecs.open('text.txt', encoding='utf-8', mode='r') as opened_file:
         text = opened_file.read()
     new_text = text.replace(" ", "")
-    new_text = new_text.replace(" ", "")
     new_text = new_text.replace(",", "")
     new_text = new_text.replace(".", "")
     new_text = new_text.replace("-", "")
