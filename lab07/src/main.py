@@ -21,7 +21,6 @@ def my_time(func):
         """
         beg_time = datetime.datetime.now()
         func(arg)
-        time.sleep(0.5)
         end_time = datetime.datetime.now()
         t = end_time - beg_time
         return t
@@ -49,7 +48,7 @@ def my_decorator(func):
 def decorator_reg(func):
     def wrapper(*arguments):
         function = func(*arguments)
-        global Registered
+        #Registered
         i = 0
         for i in range(len(Registered)):
 
@@ -69,6 +68,7 @@ def palindrome(pal):
     :param pal: Послідовність символів
     """
     p = True
+    time.sleep(1)
     count = int(len(pal)/2)
     for i in range(0, count):
         if pal[i] != pal[-(i+1)]:
