@@ -16,6 +16,7 @@ class Car:
         self.year = year
         self.volume = engine.volume
         self.horse_power = engine.horse_power
+        self.total_price()
 
     def year_price(self):
         if self.year <= 2010:
@@ -33,6 +34,7 @@ class Car:
         else:
             total_price = price
         #self.price = int(total_price)
+        self.price = total_price
         return int(total_price)
 
     def __str__(self):
@@ -40,7 +42,7 @@ class Car:
             s = "automatic"
         else:
             s = "manual"
-        return f"Brand: {self.brand}, model: {self.model}, transmission: {s}, price: {self.total_price()}, " \
+        return f"Brand: {self.brand}, model: {self.model}, transmission: {s}, price: {self.price}, " \
                f"year: {self.year}, engine volume: {self.volume}, number of horsepower: {self.horse_power}"
 
     def __repr__(self):
@@ -48,7 +50,7 @@ class Car:
             s = "automatic"
         else:
             s = "manual"
-        return f"Brand: '{self.brand}', model: '{self.model}', transmission: '{s}', price: '{self.total_price()}', " \
+        return f"Brand: '{self.brand}', model: '{self.model}', transmission: '{s}', price: '{self.price}', " \
                f"year: '{self.year}', engine volume: '{self.volume}', number of horsepower: '{self.horse_power}'"
 
 
@@ -87,14 +89,14 @@ def main():
             brand = split_str[0].split(":")[1]
             model = split_str[1].split(":")[1]
             is_auto = bool(split_str[2].split(":")[1])
-            price = int(split_str[3].split(":")[1])
+            price = int(float(split_str[3].split(":")[1]))
             year = int(split_str[4].split(":")[1])
             volume = float(split_str[5].split(":")[1])
             horse_power = int(split_str[6].split(":")[1])
             engines.append(Engine(volume, horse_power))
             cars.append(Car(brand, model, is_auto, price, year, engines[i]))
 
-    for i in range(0,3):
+    for i in range(0, 3):
         print(f"Car #{i+1}: {cars[i].brand} {cars[i].model}")
         print(cars[i])
 
