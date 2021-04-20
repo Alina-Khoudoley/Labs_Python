@@ -26,16 +26,16 @@
 > Brand: BMW, model: X6, transmission: automatic, price: 228096.0, year: 2020, engine volume: 4.4, number of horsepower: 530 <br>
 > Car #3: Mazda CX-5 <br>
 > Brand: Mazda, model: CX-5, transmission: automatic, price: 16800.0, year: 2013, engine volume: 2.0, number of horsepower: 150 <br>
-> Contract is concluded!
-> person
-> True
-> Kate 23
-> Deal number: 15000, car: Brand: Audi, model: Q7, transmission: automatic, price: 100800, year: 2021, engine volume: 3.0, number of horsepower: 286, employee: Johnson Mike
-> Deal number: 15001, car: Brand: Mazda, model: CX-5, transmission: manual, price: 14000, year: 2013, engine volume: 2.0, number of horsepower: 150, employee: Davis Liam
-> Deal number: 15002, car: Brand: BMW, model: X6, transmission: automatic, price: 158400, year: 2020, engine volume: 4.4, number of horsepower: 530, employee: Johnson Mike
-> Mike 9500
-> Liam 11000
-> Mike Johnson
-> Liam Davis
-> Johnson Mike
-> Davis Liam
+> Contract is concluded! <br> 
+> person <br> 
+> True <br> 
+> Kate 23 <br> 
+> Deal number: 15000, car: Brand: Audi, model: Q7, transmission: automatic, price: 100800, year: 2021, engine volume: 3.0, number of horsepower: 286, employee: Johnson Mike <br> 
+> Deal number: 15001, car: Brand: Mazda, model: CX-5, transmission: manual, price: 14000, year: 2013, engine volume: 2.0, number of horsepower: 150, employee: Davis Liam <br> 
+> Deal number: 15002, car: Brand: BMW, model: X6, transmission: automatic, price: 158400, year: 2020, engine volume: 4.4, number of horsepower: 530, employee: Johnson Mike <br> 
+> Mike 9500 <br> 
+> Liam 11000 <br> 
+> Mike Johnson <br> 
+> Liam Davis <br> 
+> Johnson Mike <br> 
+> Davis Liam <br> 
