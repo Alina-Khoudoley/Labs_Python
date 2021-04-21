@@ -40,6 +40,7 @@ def main():
     data = data.replace('</b>', ', ')
     data = data[28:-2]
     a = eval(data)
+    salaries = list()
     for i in range(0, len(a)):
         if 'company' in a[i]:
             print(f'Job №{i+1}\n')
@@ -48,6 +49,8 @@ def main():
         else:
             print(f'Job №{i+1}\n')
             print(a[i]['title'] + ' ' + a[i]['salary'] + ' ' + a[i]['snippet'] + ' ' + a[i]['location'])
+        salaries.append(a[i]['salary'])
+    print(f"Max salary: {max(salaries)}")
     print('\n\n')
 
 
